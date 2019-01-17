@@ -9,3 +9,9 @@ function* getFibSequence() {
         oneAgo = nextValue;
     }
 }
+
+// Driver to test
+let it = getFibSequence();
+for( let i = 0; i < 10; i++ ) {
+    console.log(it.next());
+}
